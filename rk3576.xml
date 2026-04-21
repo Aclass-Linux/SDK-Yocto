@@ -3,8 +3,8 @@
   <include name="base.xml" />
 
   <project
-    name="meta-rockchip"
+    name="JeffyCN/meta-rockchip.git"
     path="meta-rockchip"
-    remote="yocto"
+    remote="github"
     revision="scarthgap" />
 </manifest>

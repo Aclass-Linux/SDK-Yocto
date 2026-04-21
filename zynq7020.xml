@@ -2,6 +2,13 @@
 <manifest>
   <include name="base.xml" />
 
+  <!-- arm layers -->
+  <project
+    name="meta-arm"
+    path="meta-arm"
+    remote="yocto"
+    revision="scarthgap" />
+
   <project
     name="meta-xilinx"
     path="meta-xilinx"

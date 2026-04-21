@@ -21,11 +21,4 @@
     remote="github"
     revision="scarthgap" />
 
-  <!-- arm layers -->
-  <project
-    name="meta-arm"
-    path="meta-arm"
-    remote="yocto"
-    revision="scarthgap" />
-
 </manifest>
