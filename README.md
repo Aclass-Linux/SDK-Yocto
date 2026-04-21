@@ -5,13 +5,13 @@
 - `default.xml`: 默认入口, 当前指向 `rk3576.xml`
 - `base.xml`: 公共层
 - `rk3576.xml`: Rockchip RK3576 平台层
-- `stm32mp135.xml`: ST STM32MP135 平台层
+- `stm32mp157.xml`: ST STM32MP157 平台层
 - `zynq7020.xml`: Xilinx Zynq-7020 平台层
 
 当前策略:
 
 - 先保留最小可确认集合
-- 固定采用"多工作区 + 共享缓存"工程方案
+- 固定采用"单源码工作区 + 多 build 目录 + 共享缓存"工程方案
 - 所有未确认的公司仓库和 BSP 仓库先不放进 manifest
 - 平台 XML 目前只负责引用 `base.xml`
 - layer 统一直接放在工作区根目录, 不放 `sources/` 子目录
