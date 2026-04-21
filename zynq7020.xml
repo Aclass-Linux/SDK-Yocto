@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base.xml" />
+
+  <!-- Xilinx platform layers -->
+  <project
+    name="Xilinx/meta-xilinx.git"
+    path="sources/meta-xilinx"
+    remote="github"
+    revision="rel-v2024.1" />
+
+  <!-- Replace with your board support layer if you have one -->
+  <project
+    name="your-org/yocto/meta-zynq7020-bsp.git"
+    path="sources/meta-zynq7020-bsp"
+    remote="company"
+    revision="main" />
+</manifest>

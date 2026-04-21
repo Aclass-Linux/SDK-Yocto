@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base.xml" />
+
+  <!-- Replace these placeholders with your real STM32MP135 BSP repositories -->
+  <project
+    name="your-org/yocto/meta-stm32mp135-bsp.git"
+    path="sources/meta-stm32mp135-bsp"
+    remote="company"
+    revision="main" />
+
+  <project
+    name="your-org/yocto/meta-st-common.git"
+    path="sources/meta-st-common"
+    remote="company"
+    revision="main" />
+</manifest>
