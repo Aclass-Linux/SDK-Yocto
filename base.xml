@@ -2,6 +2,7 @@
 <manifest>
   <!-- Common remotes -->
   <remote name="github" fetch="https://github.com/" />
+  <remote name="yocto" fetch="https://git.yoctoproject.org/" />
 
   <!-- Keep the Yocto release aligned across all common layers -->
   <default remote="github" revision="scarthgap" sync-j="8" />
