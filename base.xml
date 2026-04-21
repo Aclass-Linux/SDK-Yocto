@@ -2,7 +2,6 @@
 <manifest>
   <!-- Common remotes -->
   <remote name="github" fetch="https://github.com/" />
-  <remote name="company" fetch="ssh://git@git.example.com/" />
 
   <!-- Keep the Yocto release aligned across all common layers -->
   <default remote="github" revision="scarthgap" sync-j="8" />
@@ -10,21 +9,14 @@
   <!-- Core Yocto -->
   <project
     name="yoctoproject/poky.git"
-    path="sources/poky"
+    path="poky"
     remote="github"
     revision="scarthgap" />
 
   <!-- OpenEmbedded layers -->
   <project
     name="openembedded/meta-openembedded.git"
-    path="sources/meta-openembedded"
+    path="meta-openembedded"
     remote="github"
     revision="scarthgap" />
-
-  <!-- Company shared layer: replace with your real repository -->
-  <project
-    name="your-org/yocto/meta-common.git"
-    path="sources/meta-common"
-    remote="company"
-    revision="main" />
 </manifest>

@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <include name="base.xml" />
-
-  <!-- Replace these placeholders with your real Rockchip BSP repositories -->
-  <project
-    name="your-org/yocto/meta-rk3576-bsp.git"
-    path="sources/meta-rk3576-bsp"
-    remote="company"
-    revision="main" />
-
-  <project
-    name="your-org/yocto/meta-rk-common.git"
-    path="sources/meta-rk-common"
-    remote="company"
-    revision="main" />
 </manifest>
