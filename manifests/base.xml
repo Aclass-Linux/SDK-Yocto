@@ -10,14 +10,14 @@
   <!-- Core Yocto -->
   <project
     name="yoctoproject/poky.git"
-    path="source/poky"
+    path="sources/poky"
     remote="github"
     revision="scarthgap" />
 
   <!-- OpenEmbedded layers -->
   <project
     name="openembedded/meta-openembedded.git"
-    path="source/meta-openembedded"
+    path="sources/meta-openembedded"
     remote="github"
     revision="scarthgap" />
 

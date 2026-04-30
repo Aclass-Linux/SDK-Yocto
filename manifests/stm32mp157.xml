@@ -3,8 +3,8 @@
   <include name="base.xml" />
 
   <project
-    name="JeffyCN/meta-rockchip"
-    path="source/meta-rockchip"
+    name="STMicroelectronics/meta-st-stm32mp.git"
+    path="sources/meta-st-stm32mp"
     remote="github"
     revision="scarthgap" />
 </manifest>
