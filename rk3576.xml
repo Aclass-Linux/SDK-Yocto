@@ -4,7 +4,7 @@
 
   <project
     name="JeffyCN/meta-rockchip"
-    path="meta-rockchip"
+    path="source/meta-rockchip"
     remote="github"
     revision="scarthgap" />
 </manifest>

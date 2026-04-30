@@ -5,13 +5,13 @@
   <!-- arm layers -->
   <project
     name="meta-arm"
-    path="meta-arm"
+    path="source/eta-arm"
     remote="yocto"
     revision="scarthgap" />
 
   <project
     name="meta-xilinx"
-    path="meta-xilinx"
+    path="source/meta-xilinx"
     remote="yocto"
     revision="scarthgap" />
 </manifest>
