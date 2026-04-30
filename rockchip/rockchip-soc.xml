@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base.xml" />
-
   <project
-    name="STMicroelectronics/meta-st-stm32mp.git"
-    path="sources/meta-st-stm32mp"
+    name="JeffyCN/meta-rockchip"
+    path="sources/meta-rockchip"
     remote="github"
     revision="scarthgap" />
 </manifest>

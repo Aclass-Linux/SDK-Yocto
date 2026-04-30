@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base.xml" />
-
-  <!-- arm layers -->
   <project
     name="meta-arm"
-    path="sources/eta-arm"
+    path="sources/meta-arm"
     remote="yocto"
     revision="scarthgap" />
 
