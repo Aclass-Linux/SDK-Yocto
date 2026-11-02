@@ -4,5 +4,6 @@
     name="STMicroelectronics/meta-st-stm32mp.git"
     path="sources/meta-st-stm32mp"
     remote="github"
-    revision="scarthgap" />
+    revision="a5e5cef8442de4eb3afca97e4c4dddb0f25e4ae1"
+    upstream="refs/heads/wrynose_v26.02.18" />
 </manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>Wrynose source integration candidate. Select a concrete Zynq-7020 board and SDT/XSCT or existing-machine boot flow before building.</notice>
+  <include name="remotes.xml" />
+  <include name="base/yocto.xml" />
+  <include name="base/openembedded.xml" />
+  <include name="base/project.xml" />
+  <include name="boards/zynq7020-demo.xml" />
+</manifest>

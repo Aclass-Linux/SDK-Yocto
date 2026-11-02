@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Explicit submodule policy. This Wrynose snapshot has no gitlinks;
+       gen-machine-conf is a separate, flow-dependent tool repository. -->
+  <project
+    name="meta-arm"
+    path="sources/meta-arm"
+    remote="yocto"
+    revision="673e8d7c5dcd14de58092eb73e6ecc5eee5c1735"
+    upstream="refs/heads/wrynose" />
+  <project
+    name="meta-xilinx"
+    path="sources/meta-xilinx"
+    remote="yocto"
+    revision="1231e93e0aa083d67ad60e9670733addcc501e92"
+    upstream="refs/heads/wrynose"
+    sync-s="true" />
+</manifest>

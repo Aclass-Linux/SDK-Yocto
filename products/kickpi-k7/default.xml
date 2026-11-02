@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Default source selection remains K7. This alias is not a production-release certification. -->
+  <include name="products/kickpi-k7/integration.xml" />
+</manifest>

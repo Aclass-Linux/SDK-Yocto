@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <include name="common/base.xml" />
-  <include name="vendors/stm32/stm32-soc.xml" />
-</manifest>

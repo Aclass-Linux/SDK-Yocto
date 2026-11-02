@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="custom/kickpi/kickpi-k7.xml" />
+  <include name="products/kickpi-k7/default.xml" />
 </manifest>

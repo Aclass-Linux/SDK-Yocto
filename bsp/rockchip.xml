@@ -4,5 +4,6 @@
     name="JeffyCN/meta-rockchip"
     path="sources/meta-rockchip"
     remote="github"
-    revision="scarthgap" />
+    revision="f2fa9fd14571b855bb59a51da11616904a65f36d"
+    upstream="refs/heads/wrynose" />
 </manifest>

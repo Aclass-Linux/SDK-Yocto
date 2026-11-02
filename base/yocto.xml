@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto 6.0.4 official release revisions. BitBake follows 2.18, not wrynose. -->
+  <project
+    name="openembedded/openembedded-core.git"
+    path="sources/openembedded-core"
+    remote="github"
+    revision="0f03c732a0a2d0506b41b1abe60b3f368b2300dc"
+    upstream="refs/heads/wrynose" />
+  <project
+    name="openembedded/bitbake.git"
+    path="sources/bitbake"
+    remote="github"
+    revision="51fd94a67fa17650a9ff623492005972bbc7d26f"
+    upstream="refs/heads/2.18" />
+  <project
+    name="meta-yocto"
+    path="sources/meta-yocto"
+    remote="yocto"
+    revision="7c25b11156553145fa6b241a2d4f65d94438f804"
+    upstream="refs/heads/wrynose" />
+</manifest>

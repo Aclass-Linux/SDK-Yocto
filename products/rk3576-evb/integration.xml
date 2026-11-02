@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>Wrynose source integration candidate. MACHINE rockchip-rk3576-evb exists upstream; image build and hardware boot are not qualified.</notice>
+  <include name="remotes.xml" />
+  <include name="base/yocto.xml" />
+  <include name="base/openembedded.xml" />
+  <include name="base/project.xml" />
+  <include name="boards/rk3576-evb.xml" />
+</manifest>

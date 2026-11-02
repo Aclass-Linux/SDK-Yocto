@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Reserved integration seam. No yocto-platform remote exists yet. See docs/platform-repository.md before adding a real project here. -->
+</manifest>

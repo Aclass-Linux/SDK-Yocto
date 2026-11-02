@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Wrynose integration snapshot observed on 2026-11-02; not part of the core 6.0.4 release set. -->
+  <project
+    name="openembedded/meta-openembedded.git"
+    path="sources/meta-openembedded"
+    remote="github"
+    revision="c734c2cb9713dbd6d50697a9f6c25ebdf3ae589e"
+    upstream="refs/heads/wrynose" />
+</manifest>
