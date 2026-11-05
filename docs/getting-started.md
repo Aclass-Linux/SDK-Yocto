@@ -146,12 +146,24 @@ python3 .repo/manifests/ci/verify-checkout.py --entry default.xml
 ```
 
 预期 6 个项目，包括核心、meta-openembedded、meta-rockchip 与 meta-kickpi。
-这是固定的源码组合。meta-kickpi 当前仍来自 Scarthgap，需先完成 Wrynose 移植，再接入产品构建配置。
+这是固定的开发源码组合。K7 已提供 Wrynose BSP 与产品层；meta-rockchip 只作源码参考。
+两层启用方法和模板见 sources/meta-kickpi/docs/product-layer.md。
+新建构建目录时，从工作区根目录执行：
+
+```bash
+export TEMPLATECONF="$PWD/sources/meta-kickpi/layers/meta-product-k7/conf/templates/k7-upstream"
+source sources/openembedded-core/oe-init-build-env build-k7
+unset TEMPLATECONF
+bitbake kickpi-image-minimal
+bitbake kickpi-image-minimal -c populate_sdk
+```
+
+该模板用于串口开发，root 为空密码；真机和 SDK 使用仍需验收。
 
 ## 6. 同步完成后的顺序
 
 1. 在满足 Yocto 主机依赖的环境完成 QEMU 配方解析、参考镜像构建与启动验证。
-2. 移植 K7 自有 layer 到 Wrynose，验证 machine、配方追加、设备树与启动链。
+2. 使用 K7 产品模板构建镜像和 SDK，验证启动链及实际应用。
 3. 创建 [yocto-platform 构建集成仓库](platform-repository.md)，交付 profile、初始化脚本和自有发行版 / image。
 4. 构建、上板验收后按 [发布流程](release-process.md) 冻结产品版本。
 

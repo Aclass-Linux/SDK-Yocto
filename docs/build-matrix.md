@@ -5,7 +5,7 @@
 | 产品入口 | 源码与配置状态 | MACHINE | 编译 / 启动状态 |
 | --- | --- | --- | --- |
 | products/qemuarm64/default.xml | 核心官方发布提交，OE-Core 默认配置 | qemuarm64 | 尚未完整编译 / 启动验收 |
-| products/kickpi-k7/integration.xml | Wrynose 核心与 Rockchip；K7 layer 仍为 Scarthgap，迁移阻塞 | kickpi-k7 | 不可宣称兼容 Wrynose |
+| products/kickpi-k7/integration.xml | Wrynose 核心；自有上游 BSP 与产品 layer，Rockchip 源码只作参考 | kickpi-k7 | 内核/U-Boot/镜像/标准 SDK 构建通过；真机及 SDK 使用待验收 |
 | products/rk3576-evb/integration.xml | 有上游 machine，产品发行版与 image 未选定 | rockchip-rk3576-evb | 待构建及实机验收 |
 | products/stm32mp157-demo/integration.xml | ST Wrynose BSP，具体 MP157 板型与发行版未选定 | 待确认 | 未验证 |
 | products/zynq7020-demo/integration.xml | Xilinx Wrynose BSP，板型与工具流程未选定 | 待确认 | 未验证 |
@@ -16,7 +16,7 @@
 
 - QEMU：OE-Core 默认模板启用 sources/openembedded-core/meta；选 Poky distro 时另启用 sources/meta-yocto/meta-poky。
 - Rockchip：核对 core、meta-openembedded/meta-oe、meta-rockchip。
-- K7：还需 meta-kickpi；移植兼容声明、配方追加、设备树并验证，不能只放宽 LAYERSERIES_COMPAT。
+- K7：启用 core、meta-oe、sources/meta-kickpi 和 sources/meta-kickpi/layers/meta-product-k7；当前不启用 meta-rockchip。模板和操作见 meta-kickpi/docs/product-layer.md。
 - STM32：核对 core、meta-oe、meta-python、ST BSP 及所选发行版实际依赖。
 - Xilinx：核对 core、meta-arm/meta-arm-toolchain、meta-arm/meta-arm、meta-xilinx/meta-xilinx-core，再按板型及 SDT/XSCT 流程选择其它 layer、工具和硬件输入。仓库根目录并非统一的 layer 根目录。
 

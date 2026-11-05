@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- The K7 layer is a pinned Scarthgap source reference. Port and validate it before building with Wrynose; do not widen LAYERSERIES_COMPAT without testing. -->
+  <!-- K7 uses its own Wrynose BSP and product layer in one pinned repository. Rockchip source remains a reference checkout and is not enabled by the K7 template. -->
   <include name="bsp/rockchip.xml" />
   <project
     name="Aclass-Linux/meta-kickpi.git"
     path="sources/meta-kickpi"
     remote="github"
-    revision="3503d16df27aaea9e411859570a6a683347cb4c5"
-    upstream="refs/heads/scarthgap">
-    <annotation name="yocto-series" value="scarthgap" keep="true" />
-    <annotation name="migration-status" value="pending-wrynose" keep="true" />
+    revision="bda8d1abb8210eeef0cb125f2d2a311f9af1f3b4"
+    upstream="refs/heads/wrynose">
+    <annotation name="yocto-series" value="wrynose" keep="true" />
+    <annotation name="qualification-status" value="build-checked-hardware-pending" keep="true" />
   </project>
 </manifest>

@@ -5,7 +5,7 @@
 
 首次使用请按 [从安装 repo 到初始化工作区](docs/getting-started.md) 操作，包含当前 Git 仓库的提交、远端发布与本地复现步骤。
 
-当前交付**固定提交的源码组合**。默认仍为 KICKPI K7，其中 meta-kickpi 暂时固定在原 Scarthgap 提交并标注待迁移，不能宣称已兼容 Wrynose。
+当前交付**固定提交的源码组合**。默认仍为 KICKPI K7，其 Wrynose BSP 和产品层由同一 meta-kickpi 仓库提供，镜像与 SDK 已构建检查，真机验收尚未完成。
 另提供不包含厂商 BSP 的 QEMU ARM64 核心参考入口。完整镜像编译和板卡启动尚未验收。
 
 ## 目录与职责
@@ -44,7 +44,7 @@ yocto-manifests/
 mkdir yocto-workspace
 cd yocto-workspace
 
-# 默认 K7 源码；其板级 layer 仍待 Wrynose 移植。
+# 默认 K7 开发集成源码；真机及量产资格仍待验收。
 repo init -u <manifest-url> -b main
 repo sync -c
 repo list
@@ -101,7 +101,8 @@ MACHINE=qemuarm64 bitbake core-image-minimal
 ```
 
 这是 OE-Core 默认配置的参考步骤，完整镜像和启动验证见 [构建矩阵](docs/build-matrix.md)。
-K7 需先移植自有 layer；其它 demo 还需确定具体板卡配置。
+K7 使用 sources/meta-kickpi/layers/meta-product-k7/conf/templates/k7-upstream 模板，
+具体步骤见该仓库 docs/product-layer.md。其它 demo 仍需确定具体板卡配置。
 
 ## 本地检查
 
