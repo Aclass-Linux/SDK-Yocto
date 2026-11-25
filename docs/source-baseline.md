@@ -22,6 +22,7 @@ BitBake 来源分支为 2.18，不能统一替换成 wrynose。原 Poky 组合�
 | bsp/xilinx.xml | meta-arm | `673e8d7c5dcd14de58092eb73e6ecc5eee5c1735` | `refs/heads/wrynose` |
 | bsp/xilinx.xml | meta-xilinx | `1231e93e0aa083d67ad60e9670733addcc501e92` | `refs/heads/wrynose` |
 | boards/kickpi-k7.xml | Aclass-Linux/meta-kickpi.git | `bda8d1abb8210eeef0cb125f2d2a311f9af1f3b4` | `refs/heads/wrynose` |
+| boards/kickpi-k7.xml | eclipse-iceoryx/meta-iceoryx2.git | `de61fae35da436e01ef0c463c6b57f57432fea36` | `refs/heads/main` |
 
 ## 来源及兼容状态
 
@@ -30,6 +31,7 @@ BitBake 来源分支为 2.18，不能统一替换成 wrynose。原 Poky 组合�
 - ST：实际分支名为 wrynose_v26.02.18，其 layer.conf 声明 wrynose。
 - Xilinx：所选 wrynose layer.conf 声明 wrynose。保留 sync-s=true 的显式策略，但该提交实际没有 gitlink；gen-machine-conf 已变为独立、按构建流程选择的工具仓库，不会由 sync-s 自动下载。
 - K7：Wrynose 自有 BSP 与产品 layer，使用 linux-yocto 6.18 和官方 U-Boot 2026.10。annotation 标记构建检查完成、硬件待验收；meta-rockchip 仍同步作参考，不加入 K7 BBLAYERS。
+- iceoryx2：官方层检出到 `sources/meta-iceoryx2`。K7 构建模板保留该层的可选入口。启用前需验证固定提交及其依赖能否在 Wrynose 上构建。
 
 [Rockchip layer](https://github.com/JeffyCN/meta-rockchip/blob/f2fa9fd14571b855bb59a51da11616904a65f36d/conf/layer.conf)、
 [ST layer](https://github.com/STMicroelectronics/meta-st-stm32mp/blob/a5e5cef8442de4eb3afca97e4c4dddb0f25e4ae1/conf/layer.conf)、

@@ -11,4 +11,13 @@
     <annotation name="yocto-series" value="wrynose" keep="true" />
     <annotation name="qualification-status" value="build-checked-hardware-pending" keep="true" />
   </project>
+  <!-- 官方 iceoryx2 配方层。启用前需验证与 K7 Wrynose 构建的兼容性。 -->
+  <project
+    name="eclipse-iceoryx/meta-iceoryx2.git"
+    path="sources/meta-iceoryx2"
+    remote="github"
+    revision="de61fae35da436e01ef0c463c6b57f57432fea36"
+    upstream="refs/heads/main">
+    <annotation name="qualification-status" value="reference-only" keep="true" />
+  </project>
 </manifest>
